@@ -1,0 +1,13 @@
+2023.12.01.
+
+pagination 문제 해결
+
+역시 안될때는 빨리 빨리 물어보는게 최고 ㅠㅠ
+
+참고할만한 다른 코드들 충분히 봤다고 생각했는데 잘못보고있었다.
+
+참고 코드와 비교해서 다른 부분 찾기.
+
+그리고 이 링크로 해결
+
+https://tanstack.com/query/v3/docs/react/guides/infinite-queries
