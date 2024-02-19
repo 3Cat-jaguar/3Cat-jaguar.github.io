@@ -8,6 +8,16 @@
     <a href="https://stackoverflow.com/questions/77667022/ignoring-compose-function-naming-error-in-spotlessktlint">스택오버플로 참고</a><br>
 
     <br>
+    kotlin 에서 가변인자 실제 쓰는건 처음인듯.<br>
+    room entity 랑 dao 셋팅하면서 vararg 를 쓰게되었다<br>
+    처음에는 (vararg a:Int) 를 넣는거랑 (a: Array&lt;Int&gt;) 처럼 배열을 넣는거랑 어떻게 다를까 했는데<br> 
+    서로 다른 인자를 가변적으로 여러개 넣는거랑 그걸 하나의 배열로 만들어서 넣는건 아무래도 다르지<br>
+    메모리상 인자들이 배열로 있을 필요 없이 인자로 받는 순서와 각각의 값만 있으면 되는거니까<br>
+    <br>
+    <a href="https://hellose7.tistory.com/128">참고한 블로그</a><br>
+    
+    <br>
+
 </div>
 <hr />
 
