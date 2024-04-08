@@ -1,5 +1,29 @@
 <div style="width: fit-content; height: fit-content; padding: 30;">
     <div style="font-size: 25; font-weight: bold;">
+        2024.04.08
+    </div>
+    <br><br>
+    
+    [지원회사 면접준비]<br>
+    백그라운드 서비스 기능 추가 관련 공부<br>
+    <br>
+    work manager 사용이 권장된다.<br>
+    work manager 는 periodicWorkRequest 를 통해 특정 시간 간격으로 반복작업 가능<br>
+    oneTimeWorkRequest 를 통한 단발적 작업도 가능하나<br>
+    activity 가 열려있지 않은 상태에서도 background 에서 동작되도록 할 때에는 불필요한 느낌<br>
+    foregroundService 랑 연결해서 notification 과 연계된 동작도 작업 예정<br>
+    - 문제 직면 <br>
+    15분 간격으로 돌아가게끔 했는데 1분정도.. 그 이내에서 계속 동작함<br>
+    정해진 간격으로 동작해야함<br>
+    여러번 시도하면서 background 에 물려있는 workmanager 가 많은데 이에 대한 처리를 안한 문제<br>
+    빌드된 앱 캐시 지우고 앱 자체도 지우고, IDE 클린빌드하고 캐시도 지우고 다시 시도<br>
+    request 를 enque 할 때 enqueueUniquePeriodicWork 를 쓰는 것이 안전<br>
+    
+    <br>
+</div>
+<hr />
+<div style="width: fit-content; height: fit-content; padding: 30;">
+    <div style="font-size: 25; font-weight: bold;">
         2024.04.05
     </div>
     <br><br>
